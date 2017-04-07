@@ -18,4 +18,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+
+jar {
+	//把依赖的包打包进可执行jar
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }}
+	
+	//添加manifest
+	manifest {
+		attributes 'Main-Class':'App'
+	}
+}	
+
 mainClassName = 'App'
