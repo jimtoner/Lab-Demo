@@ -1,0 +1,9 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'App'
+
+dependencies {
+	compile 'com.zqf:my-utils:1.0.0'
+}

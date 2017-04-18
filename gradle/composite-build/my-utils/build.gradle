@@ -1,0 +1,5 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'com.zqf'
+version='1.0.0'
