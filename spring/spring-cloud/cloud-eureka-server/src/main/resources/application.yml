@@ -1,0 +1,13 @@
+server:
+  port: 8800
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
+
+spring:
+  freemarker:
+    prefer-file-system-access: false
