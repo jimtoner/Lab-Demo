@@ -13,6 +13,7 @@ public class HomeController {
 
         html.append("<a href='demo/ribbon-words'>普通ribbon-words</a><br>");
         html.append("<a href='demo/hystrix-words'>hystrix-words</a><br>");
+        html.append("<a href='demo/feign-words'>feign-words</a><br>");
 
         return  html.toString();
     }
