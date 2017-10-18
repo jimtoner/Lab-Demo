@@ -1,0 +1,7 @@
+server:
+  port: 8840
+spring:
+  application:
+    name: CLOUDCONFIGSERVER
+  profiles:
+    active: native

@@ -1,0 +1,9 @@
+server:
+  port: 8841
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:8840/
