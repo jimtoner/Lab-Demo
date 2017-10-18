@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: CLOUDZUUL
+server:
+  port: 8830
+zuul:
+  routes:
+    api-baidu:
+      path: /api/baidu/**
+      url: https://www.baidu.com
+    api-demoservice:
+      path: /api/demo/**
+      serviceId: demoservice
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8800/eureka/
