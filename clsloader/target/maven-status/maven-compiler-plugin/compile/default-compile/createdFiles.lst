@@ -1,0 +1,4 @@
+com/zqf/intf/Plugin.class
+com/zqf/App.class
+com/zqf/impl/PluginImpl.class
+com/zqf/clsloader/UrlClsloader.class
