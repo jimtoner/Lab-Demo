@@ -11,9 +11,10 @@ import java.net.URLClassLoader;
 public class UrlClsloader {
     public void dotest() {
         try {
+            //URL url = new URL("file:/home/chris/mine/tmp/clsloader-1.0-SNAPSHOT/");
             URL url = UrlClsloader.class.getResource("/../clsloader-1.0-SNAPSHOT.jar");
             URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{url});
-            Class cl = Class.forName("com.zqf.impl.PluginImpl", true, urlClassLoader);
+            Class cl = Class.forName("com.zqf.impl.PluginImpl2", true, urlClassLoader);
             Plugin plugin = (Plugin) cl.newInstance();
             System.out.println(plugin.helloWorld("chris"));
             urlClassLoader.close();
