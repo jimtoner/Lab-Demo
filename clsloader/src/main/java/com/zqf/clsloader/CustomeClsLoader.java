@@ -15,8 +15,11 @@ public class CustomeClsLoader {
 
             Class<?> cl2=myLoader.loadClass("com.zqf.impl.PluginImpl2");
             System.out.println("--------------------------------------------");
-            plugin= (Plugin) cl2.newInstance();
-            System.out.println(plugin.helloWorld("00000"));
+            Plugin plugin2= (Plugin) cl2.newInstance();
+            System.out.println(plugin2.helloWorld("00000"));
+
+            System.out.println("--------------------------------------------");
+            System.out.println(cl.equals(cl2));
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
         }
