@@ -8,7 +8,7 @@ import com.zqf.lab.pipeline.dao.Valve;
  */
 public class BasicValveImpl implements Valve {
     private Valve valve;
-   /* @Override
+    @Override
     public Valve getNext() {
         return this.valve;
     }
@@ -16,8 +16,7 @@ public class BasicValveImpl implements Valve {
     @Override
     public void setNext(Valve valve) {
         this.valve=valve;
-    }*/
-
+    }
     @Override
     public void invoke(String data) {
         System.out.println(BasicValveImpl.class);

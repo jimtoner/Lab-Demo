@@ -11,7 +11,7 @@ import java.util.LinkedList;
  */
 public class StandardPipelineImpl implements Pipeline {
     private LinkedList<Valve> valveList=new LinkedList<>();
-    /*private Valve first;
+    private Valve first;
     private Valve basic;
     @Override
     public Valve getFirst() {
@@ -26,7 +26,7 @@ public class StandardPipelineImpl implements Pipeline {
     @Override
     public void setBasic(Valve valve) {
         this.basic=valve;
-    }*/
+    }
 
     @Override
     public void addValve(Valve valve) {
