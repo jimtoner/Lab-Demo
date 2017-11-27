@@ -1,4 +1,4 @@
-package com.zqf.lab;
+package com.zqf.lab.iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
